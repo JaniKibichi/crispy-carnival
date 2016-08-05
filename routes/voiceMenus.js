@@ -43,7 +43,7 @@ exports.voiceMenus = function(req, res) {
 	      //redirect to main IVR
 	          var response  = '<?xml version="1.0" encoding="UTF-8"?>'
 	          response += '<Response>'
-	          response += '<Redirect>http://62.12.117.25:8001/voice</Redirect>'
+	          response += '<Redirect>http://62.12.117.25:8010/voice</Redirect>'
 	          response += '</Response>';
 
 		  res.setHeader('Content-Type', 'text/plain');
