@@ -11,7 +11,7 @@ var db = require('./../models');
 
 var textMessage = "Thank you for contacting Biz Africa. ";
 textMessage += "We will call you shortly. ";
-textMessage += "Our customer care number is +254711082880.";
+textMessage += "Our customer care number is +254711082799.";
 
 exports.wiredSMS = function(req, res) {
     var isReceived = req.body.from;
@@ -32,7 +32,7 @@ exports.wiredSMS = function(req, res) {
 
 	//Dial out to the user
     voice.call({
-      'callFrom': '+254711082880',
+      'callFrom': '+254711082799',
       'callTo': isReceived
     })
     .then(function(s) {
@@ -41,9 +41,6 @@ exports.wiredSMS = function(req, res) {
     .catch(function(error) {
       console.log(error);
     });
-
-    //Alert the gateway that the POST is received.
-    res.sendStatus(200);
 
     }else{
 
@@ -59,5 +56,8 @@ exports.wiredSMS = function(req, res) {
     });
 
     }
+
+    //Alert the gateway that the POST is received.
+    res.sendStatus(200);
 
 };
