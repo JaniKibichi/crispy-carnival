@@ -8,7 +8,7 @@ var options = {
   mysql: {
     port: '3306',
     host: 'localhost',
-    db  : 'cocktail',
+    db  : 'voicemanenos',
     user: 'root',
     pass: ''
   },
