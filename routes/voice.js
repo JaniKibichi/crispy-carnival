@@ -11,7 +11,7 @@ exports.voice = function(req, res) {
 
     console.log(req.body);
 
-      var response += '<Response>';
+      var response = '<Response>';
       response += '<GetDigits timeout="30" finishOnKey="#" callbackUrl="http://62.12.117.25:8010/voiceMenus">';
       response += '<Say>Thank you for calling Biz Africa. Press 0 followed by the hash sign to talk to sales, 1 followed by the hash sign to talk to support or 2 followed by the hash sign to hear this message again.</Say>';
       response += '</GetDigits>';
