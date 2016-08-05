@@ -6,9 +6,9 @@ var db = require('./../models');
 
 exports.voiceMenus = function(req, res) {
   var isActive  = req.body.isActive;
-  var callerNumber = request.body.callerNumber
-  var dtmfDigits = request.body.dtmfDigits
-  var sessionId = request.body.sessionId
+  var callerNumber = req.body.callerNumber
+  var dtmfDigits = req.body.dtmfDigits
+  var sessionId = req.body.sessionId
 
   if (isActive === '1') {
 

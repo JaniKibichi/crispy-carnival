@@ -58,6 +58,7 @@ exports.wiredSMS = function(req, res) {
     }
 
     //Alert the gateway that the POST is received.
-    res.sendStatus(200);
+    res.status(200);
+    res.send();
 
 };
