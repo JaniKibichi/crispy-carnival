@@ -24,7 +24,8 @@ exports.wiredSMS = function(req, res) {
 
     sms.send(opts)
     .then(function(s) { 
-    	console.log(s); })
+    	console.log(s); 
+    })
     .catch(function (error) {
       console.log(error);
     });
@@ -41,7 +42,9 @@ exports.wiredSMS = function(req, res) {
       console.log(error);
     });
 
-     res.sendStatus(200);
+    //Alert the gateway that the POST is received.
+    res.sendStatus(200);
+
     }else{
 
     db.SMS.create({
