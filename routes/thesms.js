@@ -4,7 +4,7 @@
 var options = require('../config/config');
 var Africastalking = require('africastalking')(options.AT)
 
-var voice   = AfricasTalking.VOICE;
+var voice   = Africastalking.VOICE;
 var sms = Africastalking.SMS;
 
 var db = require('./../models');
