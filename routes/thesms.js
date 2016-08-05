@@ -49,7 +49,7 @@ exports.wiredSMS = function(req, res) {
       'to': req.body.to,
       'text': req.body.text,
       'date': req.body.date,
-      'id': req.body.linkId
+      'smsid': req.body.linkId
 
     }).then(function(sms) {
       console.log('SMS data added', sms);

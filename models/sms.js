@@ -12,7 +12,7 @@ module.exports = function(sequelize, DataTypes) {
     text: {
      type: DataTypes.STRING
     },
-    id: {
+    smsid: {
       type: DataTypes.STRING
     },
     linkId: {
