@@ -25,7 +25,7 @@ exports.voiceMenus = function(req, res) {
 
 		  res.setHeader('Content-Type', 'text/plain');
 		  res.send( response );
-	    [break;]
+	    break;
 
 	  case "1":
 	     //talk to support
@@ -37,7 +37,7 @@ exports.voiceMenus = function(req, res) {
 
 		  res.setHeader('Content-Type', 'text/plain');
 		  res.send( response )
-	    [break;]
+	    break;
 
 	  case "2":
 	      //redirect to main IVR
@@ -48,7 +48,7 @@ exports.voiceMenus = function(req, res) {
 
 		  res.setHeader('Content-Type', 'text/plain');
 		  res.send( response );
-	    [break;]
+	    break;
 
 	  default:
 	     //talk to support
@@ -60,7 +60,7 @@ exports.voiceMenus = function(req, res) {
 
 		  res.setHeader('Content-Type', 'text/plain');
 		  res.send( response )
-	    [break;]
+	    break;
 	  }
 
 
